@@ -31,12 +31,13 @@ public class Core {
         } catch (Exception e){
             System.out.println(e.getMessage());
         }
-        
         return this;
     }
     
     public Core histograma()
     {
+//        int lum = (int) (red^2 * 0.299 + green^2 * 0.587 + blue^2 * 0.114);
+//        int lum = (int) (red * 0.299 + green * 0.587 + blue * 0.114);
         return this;
     }
     
