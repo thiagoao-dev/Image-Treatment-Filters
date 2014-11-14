@@ -11,7 +11,12 @@ public class Core {
     private String        imagemName;
     private BufferedImage inputImage;
     private BufferedImage outputImage;
-        
+    
+    /**
+     * Carrega a imagem
+     * @param name
+     * @return self
+     */
     public Core loadImage(String name)
     {
         this.imagemName = name;
@@ -31,6 +36,11 @@ public class Core {
     }
     
     public Core histograma()
+    {
+        return this;
+    }
+    
+    public Core sobel()
     {
         return this;
     }
@@ -95,6 +105,11 @@ public class Core {
         return r;
     }
     
+    /**
+     * Salva a imagem
+     * @param name String
+     * @return self
+     */
     private Core writeImage(String name)
     {        
         try {            
